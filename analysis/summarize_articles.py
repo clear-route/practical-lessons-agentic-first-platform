@@ -2,8 +2,9 @@ import os
 from bs4 import BeautifulSoup
 
 # --- Configuration ---
-RESEARCH_DIR = 'research'
-OUTPUT_DIR = 'analysis/summaries'
+WORKSPACE_DIR = '/workspace/practical-lessons-agentic-first-platform'
+RESEARCH_DIR = os.path.join(WORKSPACE_DIR, 'research')
+OUTPUT_DIR = os.path.join(WORKSPACE_DIR, 'analysis', 'summaries')
 
 # --- Main Execution ---
 def main():
